@@ -20,3 +20,24 @@ for (let node of document.body.childNodes) {
     }
     console.log(node);
 }
+
+// Упражнение 47.а, рекурсия, вычисление факториала
+
+function factorial(x) {
+    if (Number.isInteger(x) && x >= 0) {
+        if (x === 0) {
+            return 1;
+        } else {
+            return x * factorial(x - 1);
+        }
+    } else if ((Number.isInteger(x) && x <= 0)) {
+        return 1;
+    } else {
+        return 'Аргумент должен быть целым числом!';
+    }
+}
+
+console.log(factorial(5));
+console.log(factorial(6));
+console.log(factorial(-66));
+console.log(factorial(7.77));
