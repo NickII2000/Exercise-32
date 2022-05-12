@@ -41,3 +41,22 @@ console.log(factorial(5));
 console.log(factorial(6));
 console.log(factorial(-66));
 console.log(factorial(7.77));
+
+factorial2 = (x) => {
+    if (Number.isInteger(x) && x >= 0) {
+        if (x === 0) {
+            return 1;
+        } else {
+            return x * factorial2(x - 1);
+        }
+    } else if ((Number.isInteger(x) && x <= 0)) {
+        return 1;
+    } else {
+        return 'Аргумент должен быть целым числом!';
+    }
+};
+
+console.log(factorial2(5));
+console.log(factorial2(6));
+console.log(factorial2(-66));
+console.log(factorial2(7.77));
