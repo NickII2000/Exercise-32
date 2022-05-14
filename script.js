@@ -59,4 +59,4 @@ factorial2 = (x) => {
 console.log(factorial2(5));
 console.log(factorial2(10));
 console.log(factorial2(-66));
-console.log(factorial2(7.77));
+console.log(factorial2(9.77));
